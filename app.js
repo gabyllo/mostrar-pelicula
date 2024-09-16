@@ -1,4 +1,4 @@
-import { apikey } from ".config.js";
+import { apikey } from "./config.js";
 
 document.addEventListener("DOMcontenloaded", async () => {
     return await mostrarpelicula()
