@@ -8,7 +8,7 @@ const mostrarpelicula = async () => {
 
     const url = 'https:api.themoviedb.org/3/movie/popular'
        
-    const repuesta= await fetch(`${url}?api_key=${apiKey}`);
+    const repuesta= await fetch(`${url}?apikey=${apiKey}`);
        
     const datosPeliculas = await repuesta.json();
 
