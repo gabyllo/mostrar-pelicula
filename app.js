@@ -22,8 +22,8 @@ const mostrarpelicula = async () => {
 
    imgURL.forEach(img => { 
         const imgElement = document.createElement('img');
-        imagenPeliculas.src = img;
-        document.body.appendChild(imagenPeliculas);
+        imgElement.src = img;
+        document.body.appendChild(imgElement);
     });
    
     
