@@ -1,6 +1,6 @@
 import { api_key } from "./config.js";
 
-document.addEventListener("DOMcontenloaded", async () => {
+document.addEventListener("DOMContentLoaded", async () => {
     return await mostrarpeliculas()
 });
 
@@ -8,7 +8,7 @@ const mostrarpeliculas = async () => {
 
     const url = 'https:api.themoviedb.org/3/movie/popular'
        
-    const repuesta= await fetch(`${url}?api_key=${api_Key}`);
+    const repuesta= await fetch(`${url}?api_key=${api_key}`);
        
     const datosPeliculas = await repuesta.json();
 
