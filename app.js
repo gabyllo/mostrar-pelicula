@@ -1,10 +1,10 @@
 import { api_key } from "./config.js";
 
 document.addEventListener("DOMcontenloaded", async () => {
-    return await mostrarpelicula()
+    return await mostrarpeliculas()
 });
 
-const mostrarpelicula = async () => {
+const mostrarpeliculas = async () => {
 
     const url = 'https:api.themoviedb.org/3/movie/popular'
        
@@ -16,7 +16,7 @@ const mostrarpelicula = async () => {
 
     const imgURL = [];
         
-    peliculas.foreach(peliculas => {    
+    peliculas.forEach(pelicula => {    
         imgURL.push(`https://image.tmdb.org/t/p/w500${pelicula.poster_path}`);
     });
 
